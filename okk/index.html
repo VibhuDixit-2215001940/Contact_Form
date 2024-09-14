@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <!-- Style Sheet Link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- Container -->
+    <form action="https://formspree.io/f/mqazodbv"
+    method="POST" class="container">
+      <!-- Grid -->
+      <div class="grid grid--1x2 card">
+        <div class="contact__image">
+          <picture>
+            <source
+              type="image/png"
+              srcset="images/k.png 1x, images/k.png 2x"
+            />
+            <img src="images/contact.png" alt="Contact" />
+          </picture>
+        </div>
+        <div class="contact__content">
+          <div class="contact__header">
+            <h2 class="contact__heading">Get in touch</h2>
+            <p class="contact__description">
+              Lets connect for future projects collaborations. Please fill out the form below.
+            </p>
+          </div>
+          <div class="contact__body">
+            <div class="contact__input">
+              <div>
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  autocomplete="on"
+                  autocomplete = "off"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  autocomplete="on"
+                  placeholder="Your Email"
+                  autocomplete = "off"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  class="input"
+                  type="text"
+                  name="subject"
+                  autocomplete="on"
+                  autocomplete = "off"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div>
+                <textarea
+                  class="input"
+                  name="description"
+                  placeholder="Your Message"
+                  min="5"
+                  rows="4"
+                  autocomplete = "off"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div><button class="contact__btn">Send Message</button></div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
